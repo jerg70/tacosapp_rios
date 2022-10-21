@@ -1,0 +1,51 @@
+.logoTacos{
+    width: 150px;
+    height: 100px;
+}
+
+.cartWidgetIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.hoverSubMenu :hover{
+    background-color: orange;
+}
+
+/* .contador{
+    width: fit-content;
+    background-color: orange;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+} */
+
+.taco{
+    /* display: block; */
+    /* display: flex; */
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    /* width: 300px; */
+    /* align-content: center; */
+    width: 50%;
+}
+
+/* .taco img{
+    width: 30rem;
+    height:24rem;
+    object-fit: cover;
+} */
+
+/* .precioLetra{
+    font-weight: bold;
+} */
+
+/* .tacoIndividual{
+    margin-left:40%;
+    margin-top: 3%;
+} */
+
+.nosotrosLink{
+    color: white !important;
+}
