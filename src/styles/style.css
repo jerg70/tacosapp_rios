@@ -12,13 +12,13 @@
     background-color: orange;
 }
 
-/* .contador{
+.contador{
     width: fit-content;
     background-color: orange;
     margin: auto;
     padding: 1rem;
     text-align: center;
-} */
+} 
 
 .taco{
     /* display: block; */
@@ -31,20 +31,15 @@
     width: 50%;
 }
 
-/* .taco img{
-    width: 30rem;
-    height:24rem;
-    object-fit: cover;
-} */
 
-/* .precioLetra{
+.precioLetra{
     font-weight: bold;
-} */
+}
 
-/* .tacoIndividual{
+.tacoIndividual{
     margin-left:40%;
     margin-top: 3%;
-} */
+} 
 
 .nosotrosLink{
     color: white !important;
