@@ -28,7 +28,7 @@ Lenguaje de programación multiparadigma el cuál es la base de la librería Rea
 
 [...más información.](https://www.w3schools.com/js/default.asp "...más información.")
 
-**- NPM: **
+**- npm:**
 Manejador de paquetes de Node.js, alimentado por Javascript, el cuál permite instalar diversas dependencias y/o librerías de una manera eficiente. Entre las dependencias instaladas a través de este, se encuentran React, React-Router-Dom, React-Spinners, Firebase, entre otros.
 
 [...más información.](https://www.npmjs.com/about "...más información.")
@@ -59,58 +59,59 @@ Base de datos remota que permitió alojar cada tipo de platillo que mi web app o
 [...más información.](https://firebase.google.com/docs/firestore "...más información.")
 
 ## Capturas de Pantalla del proyecto
-######INICIO
+
+###### INICIO
 [![Inicio](https://i.imgur.com/fcAkTB2.png "Inicio")](https://i.imgur.com/fcAkTB2.png "Inicio")
 
-######CATEGORIA
+###### CATEGORIA
 [![Categoría](https://i.imgur.com/YIy2Alu.png "Categoría")](https://i.imgur.com/YIy2Alu.png "Categoría")
 
-######DETALLE Y AGREGAR AL CARRITO
+###### DETALLE Y AGREGAR AL CARRITO
 [![Detalle y Agregar al Carrito](https://i.imgur.com/E2r8sGo.png "Detalle y Agregar al Carrito")](https://i.imgur.com/E2r8sGo.png "Detalle y Agregar al Carrito")
 
-######VISUALIZACIÓN DEL CARRITO
+###### VISUALIZACIÓN DEL CARRITO
 [![Visualización del carrito](https://i.imgur.com/5LnIUPq.png "VISUALIZACIÓN DEL CARRITO")](https://i.imgur.com/5LnIUPq.png "VISUALIZACIÓN DEL CARRITO")
 
-######ENVIAR PEDIDO
+###### ENVIAR PEDIDO
 [![Enviar Pedido](https://i.imgur.com/abGYS8k.png "Enviar Pedido")](https://i.imgur.com/abGYS8k.png "Enviar Pedido")
 
-######CONFIRMACIÓN DE PEDIDO
+###### CONFIRMACIÓN DE PEDIDO
 [![Confirmación de Pedido](https://i.imgur.com/8jYFXpF.png "Confirmación de Pedido")](https://i.imgur.com/8jYFXpF.png "Confirmación de Pedido")
 
 
 ## Instalación del Proyecto
-####1.- Descargar el repositorio como ZIP y descomprimir el archivo.
+#### 1.- Descargar el repositorio como ZIP y descomprimir el archivo.
 
-#####Descargar ZIP
+##### Descargar ZIP
 [![Descargar ZIP](https://i.imgur.com/Btrjte1.png "Descargar ZIP")](https://github.com/jerg70/tacosapp_rios/archive/refs/heads/ProyectoFinal.zip "Descargar ZIP")
 
 
-####2.- Instalar las dependencias utilizando NPM (previamente instalado)
+#### 2.- Instalar las dependencias utilizando NPM (previamente instalado)
 
-#####Crear nueva app React
+##### Crear nueva app React
 ```
 npx create-react-app “tacosapp” (sin comillas)
 ```
 
-#####Instalar react-router-dom
+##### Instalar react-router-dom
 ```
 npm install react-router-dom
 ```
 
-#####Instalar react-spinners
+##### Instalar react-spinners
 ```
 npm i react-spinners
 ```
-#####Instalar firebase
+##### Instalar firebase
 ```
 npm install firebase
 ```
 
-####3.- Acomodar dentro de tu carpeta de "tacosapp", los archivos descomprimidos del zip de la siguiente manera sin copiar los JSON:
+#### 3.- Acomodar dentro de tu carpeta de "tacosapp", los archivos descomprimidos del zip de la siguiente manera sin copiar los JSON:
 
 [![Gestión de Archivos](https://i.imgur.com/xu2lPwr.png "Gestión de Archivos")](https://i.imgur.com/xu2lPwr.png "Gestión de Archivos")
 
-####4.- Inicializar la app con el comando NPM react start y probar la aplicación en tu navegador de preferencia.
+#### 4.- Inicializar la app con el comando NPM react start y probar la aplicación en tu navegador de preferencia.
 
 ```
 npm start
@@ -126,7 +127,7 @@ npm start
 
 
 
-##TAREAS REALIZADAS SOLICITADAS EN [RUBRICA DE EVALUACIÓN DEL PROYECTO](https://drive.google.com/drive/folders/1Mq4myr0mTbKhPz2TVWfXy3HXtNPyDcqp?usp=share_link "RUBRICA DE EVALUACIÓN DEL PROYECTO")
+## TAREAS REALIZADAS SOLICITADAS EN [RUBRICA DE EVALUACIÓN DEL PROYECTO](https://drive.google.com/drive/folders/1Mq4myr0mTbKhPz2TVWfXy3HXtNPyDcqp?usp=share_link "RUBRICA DE EVALUACIÓN DEL PROYECTO")
 
 - [x] Incluye todos los siguientes componentes: 
 	1. navbar
@@ -142,8 +143,8 @@ npm start
 - [x] Navegabilidad con react-router-dom
 - [x] Order ID === ID del objeto de Firebase
 
-##¿Dudas?
+## ¿Dudas?
 jerg70@gmail.com
 
 
-###FIN
+### FIN
