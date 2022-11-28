@@ -1,11 +1,21 @@
 import ItemCount from "../itemCount/ItemCount";
-import React from "react";
+import React, { useState, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { CartContext } from "../context/CartContext";
+
 
 const ItemDetail = ({item}) => {
 
+    const [show, setShow] = useState(true);
+
+    const { addToCart, cantidadDeProducto } = useContext(CartContext);
+
     const onAdd = (cantidad) =>{
-        console.log("Compraste " +cantidad+ " unidades");
+        setShow(false);
+        addToCart(item, cantidad);
     }
+
+    const totalCantidad = cantidadDeProducto(item.id);
 
     return(
         <div className="col-lg-3 col-md-6 col-sm-12 card tacoIndividual text-center" style={{width: '18rem'}}>
@@ -15,7 +25,16 @@ const ItemDetail = ({item}) => {
             <p className="card-text">{item.description}</p>
             <h3>${item.price}</h3>
 
-            <ItemCount numInit={1} stock={10} onAdd={onAdd}/>
+            {show ? (
+            <ItemCount
+                stock={item.stock}
+                onAdd={onAdd}
+                initial={totalCantidad}
+            />
+            ) : (
+                
+            <Link to="/cart">Ir al carrito</Link>
+)}
         </div>
         </div>
     );

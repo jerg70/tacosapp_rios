@@ -1,7 +1,10 @@
 import React, {useEffect, useState} from "react";
 import ItemList from "../itemList/ItemList";
-import { tacos } from "../mock/tacos";
 import { useParams } from "react-router-dom";
+import { getDocs, query, where } from "firebase/firestore";
+import { collectionProd } from "../../services/firebaseConfig";
+import 'react-loading-skeleton/dist/skeleton.css';
+import { PacmanLoader } from "react-spinners";
 
 const ItemListContainer = (props) => {
 
@@ -10,19 +13,40 @@ const ItemListContainer = (props) => {
 
     const {categoryId} = useParams();
 
-    useEffect(() => {
-        const getInfo = new Promise (resolve => {
-            setTimeout(() => {
-                resolve(tacos);
-            },2000);
-        });
-        if (categoryId) {
-            getInfo.then(res => setInfo(res.filter(taco => taco.category === categoryId)));
+    const [loading, setLoading] = useState(true);
 
-        }else{
-            getInfo.then(res => setInfo(res));
-        }
-    },[categoryId]);
+    useEffect(() => {
+
+        const ref = categoryId ? query (collectionProd, where('category', '==', categoryId))
+        : collectionProd;
+
+        getDocs(ref)
+            .then((res) => {
+                //console.log(res.docs);
+                const tacos = res.docs.map((prod)=> {
+                    return{
+                        id: prod.id,
+                        ...prod.data(),
+                    };
+                })
+                    setInfo(tacos);
+            })
+            .catch((error) => {
+                console.log(error);
+            })
+            .finally(() => {
+                setLoading(false);
+            })
+            return () => setLoading(true);
+    },[categoryId]); 
+
+    if (loading) {
+        return (
+                <div className="containerLoading text-center">
+                    <PacmanLoader color="#e68405" size={35}/>
+                </div>      
+        );
+    }
 
     return(
         <div>

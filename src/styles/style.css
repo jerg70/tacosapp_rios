@@ -8,6 +8,19 @@
     height: 50px;
 }
 
+.cartWidgetNumero{
+    width: 10px;
+    height: 10px;
+    color: white;
+
+}
+
+.containerLoading{
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-left: 50%;
+}
 .hoverSubMenu :hover{
     background-color: orange;
 }

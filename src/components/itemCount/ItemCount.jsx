@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import useState from "react";
 
 
-const ItemCount = ({numInit,stock,onAdd})=> {
+const ItemCount = ({numInit = 1,stock,onAdd})=> {
     const[count,setCount] = useState(parseInt(numInit));
 
     const decrementar = () =>{
@@ -18,9 +18,10 @@ const ItemCount = ({numInit,stock,onAdd})=> {
             setCount(count + 1);
     }
 
-    useEffect(() => {
-        setCount(parseInt(numInit));
-    },[numInit])
+    const agregar = () => {
+        onAdd(count);
+    };
+
 
     return(
         <div className="contador">
@@ -28,7 +29,7 @@ const ItemCount = ({numInit,stock,onAdd})=> {
             <span>{count}</span>
             <button disabled={count>=stock} onClick={incrementar}>+</button>
             <div>
-                <button disabled={stock <= 0 || count <= 0} onClick={() => onAdd(count)}>Agregar al Carrito</button>
+                <button disabled={stock <= 0 || count <= 0} onClick={agregar}>Agregar al Carrito</button>
             </div>
 
         </div>
