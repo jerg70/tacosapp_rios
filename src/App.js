@@ -1,5 +1,4 @@
 import './styles/style.css';
-import 'animate.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Form from './components/form/Form';

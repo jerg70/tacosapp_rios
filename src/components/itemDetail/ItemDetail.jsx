@@ -17,6 +17,7 @@ const ItemDetail = ({item}) => {
 
     const totalCantidad = cantidadDeProducto(item.id);
 
+
     return(
         <div className="col-lg-3 col-md-6 col-sm-12 card tacoIndividual text-center" style={{width: '18rem'}}>
         <img src={item.pictureurl} className="card-img-top" alt={item.title}/>
@@ -32,7 +33,7 @@ const ItemDetail = ({item}) => {
                 initial={totalCantidad}
             />
             ) : (
-                
+
             <Link to="/cart">Ir al carrito</Link>
 )}
         </div>

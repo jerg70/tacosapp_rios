@@ -6,13 +6,41 @@
 .cartWidgetIcon{
     width: 50px;
     height: 50px;
-}
+} 
 
 .cartWidgetNumero{
-    width: 10px;
-    height: 10px;
+    width: 2px;
+    height: 2px;
+    font-weight: bold;
     color: white;
+    text-shadow: 3px 2px 5px red;
+    position: absolute;
+    top: 1%;
+    right: 20%;
 
+}
+
+.videoDemo{
+    padding: 2%;
+    /* margin-left: 20%; */
+}
+
+.nosotros_Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    padding-top: 2%; }
+
+.nosotros_Box p {
+    text-align: center;
+    margin-right: 100px; }
+
+.carritoDiv{
+    position: relative;
+    align-items: center;
+    margin-right: 8px;
 }
 
 .containerLoading{
@@ -56,4 +84,52 @@
 
 .nosotrosLink{
     color: white !important;
+}
+
+.sectionFinalCompra{
+    margin-bottom: 7rem; }
+
+.div_Compra_form {
+margin: 0px; }
+
+.container_form {
+    display: block;
+    padding: 5%;
+    margin: auto;
+    text-align: center; }
+    
+.container_form label,
+input,
+select,
+textarea {
+display: block;
+margin-right: auto;
+margin-left: auto; }
+
+.input_Form {
+margin-top: 5px;
+padding: 5px; }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .nosotros_Box p {
+    text-align: center;
+    margin-left: 120px; 
+    }
+
+    .videoDemo iframe{
+        width: 500px;
+        height: 420px; 
+}
+}
+
+@media screen and (max-width: 480px) {
+    .nosotros_Box {
+    margin-bottom: 13rem;
+    padding-top: 10%; 
+    }
+
+    .videoDemo iframe {
+        width: 250px;
+        height: 200px; 
+    }
 }

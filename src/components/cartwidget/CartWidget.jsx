@@ -8,13 +8,10 @@ const CartWidget = () => {
     const { totalUnidades } = useContext(CartContext);
 
     return (
-        //<div style={{ display: 'flex', alignItems: 'center' }}>
-        <a href="/">
-        <img src="cartwidget_Icon.png" alt="CWI" className="navbar-brand cartWidgetIcon justify-content-end"/>
+        <div className="carritoDiv text-left">
+        <input type="image" name="CartWidget"src="cartwidget_Icon.png" alt="CWI" className="navbar-brand cartWidgetIcon"/>
         <span className="cartWidgetNumero">{totalUnidades() !== 0 && totalUnidades()}</span>
-        </a>
-        //<span>{totalUnidades() !== 0 && totalUnidades()}</span>
-         //</div>
+        </div>
     );
 };
 export default CartWidget;

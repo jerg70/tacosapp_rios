@@ -3,7 +3,6 @@ import ItemList from "../itemList/ItemList";
 import { useParams } from "react-router-dom";
 import { getDocs, query, where } from "firebase/firestore";
 import { collectionProd } from "../../services/firebaseConfig";
-import 'react-loading-skeleton/dist/skeleton.css';
 import { PacmanLoader } from "react-spinners";
 
 const ItemListContainer = (props) => {
@@ -22,7 +21,6 @@ const ItemListContainer = (props) => {
 
         getDocs(ref)
             .then((res) => {
-                //console.log(res.docs);
                 const tacos = res.docs.map((prod)=> {
                     return{
                         id: prod.id,

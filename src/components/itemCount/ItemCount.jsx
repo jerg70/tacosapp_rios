@@ -1,8 +1,8 @@
-import useState from "react";
+import { useState } from "react";
 
 
-const ItemCount = ({numInit = 1,stock,onAdd})=> {
-    const[count,setCount] = useState(parseInt(numInit));
+const ItemCount = ({stock,onAdd,numInit = 1})=> {
+    const[count,setCount] = useState(numInit);
 
     const decrementar = () =>{
         if(count > 0){
@@ -31,7 +31,6 @@ const ItemCount = ({numInit = 1,stock,onAdd})=> {
             <div>
                 <button disabled={stock <= 0 || count <= 0} onClick={agregar}>Agregar al Carrito</button>
             </div>
-
         </div>
     )
 }

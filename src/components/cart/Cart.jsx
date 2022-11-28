@@ -17,21 +17,25 @@ const Cart = () => {
 
     return (
         <div>
-            {cart.map((prod) => (
-                <div key={prod.id}>
-                    <img src={prod.img} alt={prod.title} width="80px" />
-                    <div>
-                        <h3>{prod.title}</h3>
-                        <h3>{prod.cantidad}</h3>
-                        <button onClick={() => deleteOne(prod.id)}>
+            {cart.map((item) => (
+                <div key={item.id} className="col-lg-3 col-md-6 col-sm-12 card tacoIndividual text-center" style={{width: '18rem'}}>
+                    <img src={item.pictureurl} alt={item.title} className="card-img-top"/>
+                    <div className="card-body">
+                        <h3>{item.title}</h3>
+                        <h3>{item.cantidad}</h3>
+                        <button onClick={() => deleteOne(item.id)}>
                             Eliminar
                         </button>
                     </div>
                 </div>
             ))}
-            <h2>Total: {totalPrecio()}$</h2>
-            <button onClick={deleteAll}>Vaciar carrito</button>
-            <Link to="/checkout">Checkout</Link>
+            <div className="card text-center">
+                <div className="card-body">
+                    <h2 className='card-text'>Total: {totalPrecio()}$</h2>
+                    <button onClick={deleteAll} className="card-text">Vaciar carrito</button>
+                    <Link to="/checkout">Checkout</Link>
+                </div>
+            </div>
         </div>
     );
 };

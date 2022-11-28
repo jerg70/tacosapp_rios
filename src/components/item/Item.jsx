@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Link } from "react-router-dom";
 
 const Item = ({info}) =>{
@@ -15,4 +15,4 @@ const Item = ({info}) =>{
     );
 }
 
-export default Item;    
+export default Item;
