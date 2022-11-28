@@ -107,7 +107,7 @@ npm i react-spinners
 npm install firebase
 ```
 
-#### 3.- Acomodar dentro de tu carpeta de "tacosapp", los archivos descomprimidos del zip de la siguiente manera sin copiar los JSON:
+#### 3.- Acomodar dentro de tu carpeta de "tacosapp", los archivos descomprimidos del zip de la siguiente manera:
 
 [![Gestión de Archivos](https://i.imgur.com/xu2lPwr.png "Gestión de Archivos")](https://i.imgur.com/xu2lPwr.png "Gestión de Archivos")
 
